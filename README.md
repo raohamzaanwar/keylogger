@@ -36,12 +36,7 @@ pip install pyxhook
 Installation
 Clone the Repository:
 
-bash
-Copy code
-git clone https://github.com/yourusername/python-keylogger.git
-cd python-keylogger
 Install Dependencies:
-
 Use the commands listed in the Prerequisites section to install the required libraries based on your platform.
 Usage
 Running the Keylogger on Windows:
@@ -61,7 +56,7 @@ Press the backtick (`) key to stop the keylogger.
 Code Explanation
 Windows Keylogger
 Hides Console Window: The console window is hidden using win32gui.ShowWindow(win, 0) to ensure the keylogger runs silently.
-Keystroke Logging: The pyHook library is used to capture and log keystrokes, which are saved to C:\output.txt.
+Keystroke Logging: The pyHook library captures and logs keystrokes, which are saved to C:\output.txt.
 Exit Mechanism: The script stops when Ctrl + E (ASCII 5) is pressed.
 Linux Keylogger
 Keystroke Logging: The pyxhook library is used to capture keystrokes, which are saved to ~/Desktop/file.log.
